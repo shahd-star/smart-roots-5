@@ -1,0 +1,697 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Roots</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="logo.jpeg"  alt="Smart Roots Logo" class="logo">
+      <span class="logo-text">Smart Roots</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Book a Lesson</a></li>
+      <li><a href="#">Learning Styles & IQ Tests</a></li>
+      <li><a href="#">Simulations</a></li>
+      <li><a href="#">Marketplace</a></li>
+      <li><a href="#">Articles</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Roots - Educational Platform for Kids</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f9ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #89CFF0, #6baed6);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+
+        img {
+          width: 150px;
+          height: auto; /* علشان مايتشوهش */
+          } 
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            color: white;
+            font-size: 2rem;
+            margin-left: 10px;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: white;
+        }
+        
+        .navbar {
+              background-color: #8ebff0; /* نفس اللون بتاع الـ nav القديم */
+              color: white;
+              padding: 15px 30px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              }
+
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #e6f7ff;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%2389CFF0" opacity="0.2"/><path d="M0 0L100 100" stroke="%2389CFF0" stroke-width="2" opacity="0.2"/></svg>');
+            padding: 4rem 0;
+            text-align: center;
+            color: #2c5282;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: #4a5568;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #89CFF0;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #6baed6;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+          
+        }
+
+        .video-section {
+  background-color: #f0f8ff; /* لبني فاتح */
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.video-section h2 {
+  font-size: 28px;
+  color: #003366; /* لبني غامق شوية */
+  margin-bottom: 20px;
+}
+
+.video-container {
+  max-width: 400px;
+  max-height: 600px;
+  margin: 0 auto;
+  border: 5px solid #e6f2ff; /* حدود فاتحة */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+        
+        /* Features Section */
+        .features {
+            padding: 4rem 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c5282;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background-color: #f8fbff;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #89CFF0;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            color: #2c5282;
+            margin-bottom: 1rem;
+        }
+        
+        /* Memory Types Section */
+        .memory-types {
+            padding: 4rem 0;
+            background-color: #f0f9ff;
+        }
+        
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .memory-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .memory-content {
+            padding: 1.5rem;
+        }
+        
+        .memory-card h3 {
+            color: #2c5282;
+            margin-bottom: 1rem;
+        }
+        
+        /* Activities Section */
+        .activities {
+            padding: 4rem 0;
+            background-color: white;
+        }
+        
+        .activity-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .tab-btn {
+            padding: 1rem 2rem;
+            background-color: #e6f7ff;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            color: #4a5568;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-btn:first-child {
+            border-radius: 30px 0 0 30px;
+        }
+        
+        .tab-btn:last-child {
+            border-radius: 0 30px 30px 0;
+        }
+        
+        .tab-btn.active {
+            background-color: #89CFF0;
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .activity-card {
+            background-color: #f8fbff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .activity-content {
+            padding: 1.5rem;
+        }
+        
+        .activity-card h3 {
+            color: #2c5282;
+            margin-bottom: 1rem;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 4rem 0;
+            background-color: #f0f9ff;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #2c5282;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c5282;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section ul li a {
+            color: #e6f7ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #89CFF0;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: #89CFF0;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #4a71a8;
+            color: #e6f7ff;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .activity-tabs {
+                flex-direction: column;
+            }
+            
+            .tab-btn {
+                border-radius: 30px !important;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Unlock Your Child's Learning Potential</h2>
+            <p>Smart Roots helps students and kids develop critical thinking skills based on their unique memory types. Our innovative approach makes learning fun and effective!</p>
+            <a href="#" class="btn">Get Started Today</a>
+        </div>
+    </section>
+    
+    <section class="video-section">
+  <h2>Watch Our Journey</h2>
+  <div class="video-container">
+    <video controls autoplay muted loop>
+      <source src="intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">How Smart Roots Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-brain feature-icon"></i>
+                    <h3>Memory Assessment</h3>
+                    <p>We identify your child's dominant memory type through engaging activities.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-puzzle-piece feature-icon"></i>
+                    <h3>Personalized Learning</h3>
+                    <p>Customized activities designed to match your child's learning style.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your child's development and celebrate their achievements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memory Types Section -->
+    <section class="memory-types">
+        <div class="container">
+            <h2 class="section-title">Understanding Memory Types</h2>
+            <div class="memory-grid">
+                <div class="memory-card">
+                    <div class="memory-content">
+                        <h3>Visual Memory</h3>
+                        <p>Children with strong visual memory learn best through images, colors, and spatial understanding.</p>
+                    </div>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-content">
+                        <h3>Auditory Memory</h3>
+                        <p>These learners excel when information is presented through sound, music, or verbal instruction.</p>
+                    </div>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-content">
+                        <h3>Kinesthetic Memory</h3>
+                        <p>Hands-on activities and movement help these children retain information most effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities">
+        <div class="container">
+            <h2 class="section-title">Learning Activities</h2>
+            <div class="activity-tabs">
+                <button class="tab-btn active" data-tab="visual">Visual</button>
+                <button class="tab-btn" data-tab="auditory">Auditory</button>
+                <button class="tab-btn" data-tab="kinesthetic">Kinesthetic</button>
+            </div>
+            
+            <div class="tab-content active" id="visual-content">
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <div class="activity-content">
+                            <h3>Pattern Recognition</h3>
+                            <p>Games that help children identify and complete visual patterns.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-content">
+                            <h3>Memory Matching</h3>
+                            <p>Classic card matching games that strengthen visual memory.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-content">
+                            <h3>Color Sequencing</h3>
+                            <p>Activities that involve remembering and reproducing color sequences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="auditory-content">
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <div class="activity-content">
+                            <h3>Sound Patterns</h3>
+                            <p>Identifying and repeating rhythmic patterns and sequences.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-content">
+                            <h3>Story Recall</h3>
+                            <p>Listening to stories and recalling specific details afterwards.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-content">
+                            <h3>Verbal Instructions</h3>
+                            <p>Following multi-step instructions presented verbally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="kinesthetic-content">
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <div class="activity-content">
+                            <h3>Hands-on Building</h3>
+                            <p>Constructing models and structures to understand concepts.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-content">
+                            <h3>Movement Sequences</h3>
+                            <p>Learning through physical movement and dance patterns.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-content">
+                            <h3>Tactile Learning</h3>
+                            <p>Using touch and manipulation to explore educational concepts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Parents & Teachers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Smart Roots has transformed how my daughter approaches learning. The memory-based activities are both fun and educational!"</p>
+                    <p class="testimonial-author">- Sarah, Parent</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"As a teacher, I've seen remarkable improvements in my students' retention since incorporating Smart Roots into our curriculum."</p>
+                    <p class="testimonial-author">- Mr. Johnson, 3rd Grade Teacher</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"My son actually asks to do his 'brain games' now. He's developing skills that will help him throughout his education."</p>
+                    <p class="testimonial-author">- Michael, Parent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Smart Roots</h3>
+                    <p>Helping children grow smarter roots through memory-based learning approaches.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Methodology</a></li>
+                        <li><a href="#">Memory Types</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Smart Roots Educational Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab functionality for activities section
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(${tabId}-content).classList.add('active');
+                });
+            });
+            
+            // Simple animation for feature cards
+            const featureCards = document.querySelectorAll('.feature-card');
+            
+            featureCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
